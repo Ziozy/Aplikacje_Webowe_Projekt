@@ -1,0 +1,19 @@
+extends layout
+block content
+	h1 Dodawanie 
+	form(method="post" action="/add")
+		label Marka
+		br
+		input(type="text" name="mark")
+		br
+		label Model
+		br
+		input(type="text" name="name")
+		br
+		label Rok
+		br
+		input(type="number" name="year")
+		br
+		input(type="submit" value="Dodaj")
+		if message!=''
+			p #{message}
